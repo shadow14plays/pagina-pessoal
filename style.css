@@ -106,22 +106,20 @@ section h2 {
     border: 1px solid #5ED0C7;
 }
 
-/* Estilização do Contato */
-.contact {
-    text-align: center;
-}
-
-.contact p {
-    font-size: 1.1em;
-}
-
+/* Estilização dos Links Sociais */
 .social-links a {
-    color: #5ED0C7; /* Links sociais com a cor secundária */
+    color: #5ED0C7; 
     text-decoration: none;
     font-weight: bold;
-    margin: 0 15px;
-    font-size: 1.1em;
-    transition: color 0.3s;
+    margin: 0 15px; /* Aumentamos um pouco a margem para separar os ícones */
+    font-size: 1.1em; /* Removido, pois o fa-2x já controla o tamanho */
+    transition: color 0.3s, transform 0.2s; /* Adicionamos transição de transformação */
+    display: inline-block; /* Importante para aplicar o efeito de hover */
+}
+
+.social-links a:hover {
+    color: #102B46; 
+    transform: scale(1.1); /* Ícone cresce um pouco no hover */
 }
 
 .social-links a:hover {
