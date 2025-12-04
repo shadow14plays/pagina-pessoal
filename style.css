@@ -122,10 +122,6 @@ section h2 {
     transform: scale(1.1); /* Ícone cresce um pouco no hover */
 }
 
-.social-links a:hover {
-    color: #102B46; /* Inverte a cor no hover */
-}
-
 /* Estilização do Rodapé */
 footer {
     text-align: center;
