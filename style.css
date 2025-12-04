@@ -1,1 +1,156 @@
+/* Paleta de Cores: #102B46 (Azul Marinho), #5ED0C7 (Verde Água), #F8F9FA (Branco Sujo), #333333 (Cinza Escuro) */
 
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F8F9FA; /* Cor de fundo principal */
+    color: #333333; /* Cor de texto padrão */
+    line-height: 1.6;
+}
+
+/* Container para centralizar o conteúdo */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 0 20px 0; /* Ajustado para melhor espaçamento vertical */
+}
+
+/* --- ESTILIZAÇÃO DO CABEÇALHO (HERO) --- */
+.hero {
+    background-color: #102B46; /* Cor Primária (Azul Marinho) */
+    color: white;
+    text-align: center;
+    padding: 80px 0 60px 0; /* Mais padding no topo para destaque */
+    margin-bottom: 0;
+}
+
+.hero h1 {
+    margin-bottom: 5px;
+    font-size: 3em; /* Fonte maior para o nome */
+    letter-spacing: 1px;
+}
+
+.hero p {
+    font-size: 1.3em;
+    font-weight: 300;
+    opacity: 0.8;
+    margin-top: 0;
+}
+
+.profile-photo {
+    width: 180px; /* Foto um pouco maior */
+    height: 180px;
+    border-radius: 50%;
+    border: 7px solid #5ED0C7; /* Borda com a Cor Secundária (Verde Água) */
+    margin: 30px 0;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out; /* Efeito hover */
+}
+
+.profile-photo:hover {
+    transform: scale(1.05);
+}
+
+/* Botão de Chamada para Ação (CTA) */
+.cta-button {
+    display: inline-block;
+    background-color: #5ED0C7; /* Cor Secundária (Verde Água) */
+    color: #102B46; /* Cor de texto que contrasta bem */
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 25px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.cta-button:hover {
+    background-color: #4CB0A7; /* Tom um pouco mais escuro ao passar o mouse */
+    transform: translateY(-2px); /* Efeito de "levitar" */
+}
+
+/* --- ESTILIZAÇÃO DAS SEÇÕES --- */
+section {
+    padding: 60px 0;
+    margin-bottom: 0;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05); /* Sombra mais destacada */
+    border-bottom: 1px solid #eee;
+}
+
+section h2 {
+    text-align: center;
+    color: #102B46; /* Títulos com a cor principal */
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+/* Estilização específica das Habilidades */
+.skills ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.skills li {
+    display: inline-block;
+    background-color: #E6F3F2; /* Fundo suave para os itens */
+    color: #102B46;
+    padding: 10px 20px;
+    margin: 8px;
+    border-radius: 25px;
+    font-weight: 500;
+    border: 1px solid #5ED0C7;
+}
+
+/* Estilização do Contato */
+.contact {
+    text-align: center;
+}
+
+.contact p {
+    font-size: 1.1em;
+}
+
+.social-links a {
+    color: #5ED0C7; /* Links sociais com a cor secundária */
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 15px;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #102B46; /* Inverte a cor no hover */
+}
+
+/* Estilização do Rodapé */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #102B46; /* Rodapé com a cor principal */
+    color: white;
+    font-size: 0.85em;
+}
+
+/* --- RESPONSIVIDADE (PARA CELULARES) --- */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5em;
+    }
+    .hero p {
+        font-size: 1.1em;
+    }
+    section {
+        padding: 40px 0;
+    }
+    .skills li {
+        display: block;
+        width: 80%;
+        margin: 10px auto;
+    }
+}
